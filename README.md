@@ -7,5 +7,5 @@
 #### Best Case Complexity : O(nlogn)
 #### Worst Case Complexity : O(n^2) 
  
-### 1. Insertion Sort
+### 3. Insertion Sort
 #### Complexity(Best, Average, Worst) : O(n^2)
