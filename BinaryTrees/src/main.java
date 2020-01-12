@@ -24,21 +24,28 @@
         Node root;
 
 
-        BinaryTree(int data)
+        public BinaryTree(int data)
         {
-            Node root = new Node(data);
+            root = new Node(data);
+        }
+
+        public BinaryTree()
+        {
+            root = null;
         }
     }
 public class main
 {
     public static void main(String args[])
     {
-        BinaryTree tree = new BinaryTree(10);
+        BinaryTree tree = new BinaryTree(6);
 
-        tree.root = new Node(4);
+        System.out.println(tree.root.data);
 
         tree.root.left = new Node(5);
         tree.root.right = new Node(20);
+        System.out.println(tree.root.right.data);
+
     }
 }
 
