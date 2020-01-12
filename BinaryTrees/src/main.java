@@ -1,12 +1,11 @@
-public class main {
 
-    public class Node
+    class Node
     {
         int data;
         Node left;
         Node right;
 
-        public Node(int data, node l, node r)
+        public Node(int data, Node l, Node r)
         {
             this.data = data;
             this.left = l;
@@ -15,12 +14,12 @@ public class main {
         public Node(int data)
         {
             this.data = data;
-            left = right = null;
+            this.left = this.right = null;
         }
 
     }
 
-    public static class BinaryTree
+    class BinaryTree
     {
         Node root;
 
@@ -30,17 +29,19 @@ public class main {
             Node root = new Node(data);
         }
     }
-
+public class main
+{
     public static void main(String args[])
     {
         BinaryTree tree = new BinaryTree(10);
 
+        tree.root = new Node(4);
+
         tree.root.left = new Node(5);
         tree.root.right = new Node(20);
     }
-
-
-
-
-
 }
+
+
+
+
